@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def uppercase(str):
+def  uppercase(str):
     upper = ""
     counter = 0
     for i in str:
@@ -12,4 +12,4 @@ def uppercase(str):
         else:
             upper = upper + str[counter]
         counter = counter + 1
-    print("{}".format(upper))
+        print("{}".format(upper))
