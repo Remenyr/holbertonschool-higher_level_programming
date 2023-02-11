@@ -1,0 +1,50 @@
+Using ''text_indentation''
+----------------------------------------
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("???")
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+
+>>> text_indentation("Where are the people? resumed the little prince at last. It’s a little lonely in the desert... It is lonely when you’re among people, too, said the snake. The Little Prince: Antoine de Saint-Exupéry")
+Where are the people?
+<BLANKLINE>
+resumed the little prince at last.
+<BLANKLINE>
+It’s a little lonely in the desert.
+<BLANKLINE>
+.
+<BLANKLINE>
+.
+<BLANKLINE>
+It is lonely when you’re among people, too, said the snake.
+<BLANKLINE>
+The Little Prince:
+<BLANKLINE>
+Antoine de Saint-Exupéry
+
+>>> text_indentation("Testing:: exhausting")
+Testing:
+<BLANKLINE>
+:
+<BLANKLINE>
+exhausting
+
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation(2)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation("a, b", "b:a")
+Traceback (most recent call last):
+...
+TypeError: text_indentation() takes 1 positional argument but 2 were given
